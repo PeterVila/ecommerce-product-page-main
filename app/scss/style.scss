@@ -19,7 +19,7 @@ nav {
         display: flex;
         flex-direction: row;
         list-style-type: none;
-
+        text-align: center;
         & li {
             width: 20%;
         }
@@ -36,6 +36,7 @@ nav {
 }
 
 main {
+    padding: 0 2rem;
     .product {
         &__company {
             color: $primary-one;
@@ -46,15 +47,53 @@ main {
     }
     .price {
         display: flex;
-        border: 1px solid black;
         align-items: center;
         &__discount {
         }
         &__percent {
-
+            margin: 0 1rem;
+            padding: 0.25rem 0.5rem;
+            background-color: $primary-two;
+            border-radius: 0.5rem;
+            color: $primary-one
         }
     }
     .retail {
 
+    }
+
+    .counter {
+        display: flex;
+        justify-content: space-between;
+        background-color: $light-gray-blue;
+        padding: 1rem;
+        border-radius: 1rem;
+        align-items: center;
+        & button {
+            border: none;
+            background: transparent;
+            color: $primary-one;
+            font-size: 2rem;
+        }
+        &__digit h3 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .add-to-cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary-one;
+        border-radius: 1rem;
+        margin: 1rem 0 3rem;
+        img {
+            filter: brightness(0) invert(1);
+            margin: 1rem;
+        }
+        h3 {
+            color: $white;
+        }
     }
 }
